@@ -6,6 +6,9 @@
         Part2();
     }
 
+    /// <summary>
+    /// Solve Part 1 of Day 1 of the 2024 AOC
+    /// </summary>
     private static void Part1()
     {
         List<int> l1 = new();
@@ -33,6 +36,9 @@
         Console.WriteLine($"Part 1 Total Distance is: {accumulator}");
     }
 
+    /// <summary>
+    /// Solve part 2  of day 1 of the 2024 Advent of Code
+    /// </summary>
     private static void Part2()
     {
         List<int> left = new();
