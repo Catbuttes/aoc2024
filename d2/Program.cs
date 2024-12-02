@@ -10,5 +10,11 @@ foreach (var line in raw)
 }
 
 var safe = reports.Where(r => r.IsSafe() == ReportSafety.Safe).Count();
+var dampedSafe = reports.Where(r => r.DampedIsSafe() == ReportSafety.Safe).Count();
+var dampedUnSafe = reports.Where(r => r.DampedIsSafe() == ReportSafety.Unsafe).Count();
 
+
+Console.WriteLine($"Reports total: {reports.Count}");
 Console.WriteLine($"Part 1: Reports are safe: {safe}");
+Console.WriteLine($"Part 2: Damped Reports are safe: {dampedSafe}");
+Console.WriteLine($"Part 2: Damped Reports are unsafe: {dampedUnSafe}");
